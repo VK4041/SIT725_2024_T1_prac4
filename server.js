@@ -61,7 +61,7 @@ app.post('/api/cities', async (req, res) => {
 
 });
 
-app.listen(port, async () => {
+app.listen(port, () => {
     console.log("App Listening on port " + port);
-    await runDBConnection();
+    runDBConnection();
 });
